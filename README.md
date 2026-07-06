@@ -1,2 +1,2 @@
-# wdd231
-WDD 231 - BYU-Idaho
+# WDD 231
+Web Frontend Development I coursework for BYU-Idaho.

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Home - Ezequiel Lezcano</title>
+    <meta name="description" content="WDD 231 home page for Ezequiel Lezcano. Ezequiel was born in Choele Choel, Rio Negro Province, currently lives in 9 de Julio, Buenos Aires Province, works as an auditor and data analyst, and is a saxophonist in the band Altimus Club.">
+    <meta name="author" content="Ezequiel Lezcano">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="site-branding">
+            <img src="images/wolf_logo.svg" alt="Ezequiel Lezcano site logo" width="64" height="64">
+            <span>Ezequiel Lezcano</span>
+        </div>
+        <button id="menuButton" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryNav">&#9776;</button>
+    </header>
+
+    <nav id="primaryNav" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="final/index.html">Final</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="content-grid">
+            <section class="about-card">
+                <h2>About Me</h2>
+                <p>My name is Ezequiel Lezcano. I was born in Choele Choel, Rio Negro Province, and I currently live in the city of 9 de Julio, Buenos Aires Province. I work as an auditor and data analyst. I am also a saxophonist and play in the band "Altimus Club."</p>
+            </section>
+
+            <section class="photo-card">
+                <h2>Student Photo</h2>
+                <img src="images/profile.png" alt="Portrait of Ezequiel Lezcano" width="320" height="320">
+            </section>
+
+            <section class="courses-card">
+                <h2>Web Certificate Courses</h2>
+                <div class="course-filters" aria-label="Course filters">
+                    <button id="all" class="active" type="button">All</button>
+                    <button id="cse" type="button">CSE</button>
+                    <button id="wdd" type="button">WDD</button>
+                </div>
+                <div id="courseList" class="course-list" aria-live="polite">
+                </div>
+                <p id="totalCredits" class="credits"></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/Elezcano23/wdd231" target="_blank" rel="noopener" aria-label="GitHub repository">
+                <img src="images/github.svg" alt="" width="40" height="40">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                <img src="images/linkedin.png" alt="" width="40" height="40">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram profile">
+                <img src="images/instagram.png" alt="" width="40" height="40">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook profile">
+                <img src="images/facebook.png" alt="" width="40" height="40">
+            </a>
+        </div>
+        <p>&copy;<span id="currentyear"></span> &bull; Ezequiel Lezcano &bull; Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
