@@ -1,0 +1,85 @@
+:root {
+    --navy: #17324d;
+    --blue: #2f6690;
+    --mist: #e9f1f7;
+    --paper: #f8fafc;
+    --ink: #1e293b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito Sans", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+}
+
+header,
+footer {
+    padding: 1.25rem;
+    color: white;
+    text-align: center;
+    background: var(--navy);
+}
+
+h1,
+h2 {
+    font-family: "DM Serif Display", Georgia, serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem;
+}
+
+#cards section {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    overflow: hidden;
+    border: 1px solid #c9d8e3;
+    border-radius: 8px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 4px 12px rgb(23 50 77 / 12%);
+}
+
+#cards h2 {
+    margin: 0;
+    padding: 1rem 1rem 0.35rem;
+    color: var(--navy);
+    font-size: 1.55rem;
+}
+
+#cards p {
+    margin: 0;
+    padding: 0.15rem 1rem;
+    line-height: 1.45;
+}
+
+#cards img {
+    width: 100%;
+    height: 340px;
+    margin-top: 1rem;
+    object-fit: cover;
+    object-position: top;
+    background: var(--mist);
+}
+
+footer {
+    font-size: 0.95rem;
+}
