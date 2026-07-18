@@ -1,0 +1,9 @@
+[
+  {"name":"Patagonia Harvest","address":"Rivadavia 835, Choele Choel","phone":"+54 2944 555-101","website":"https://example.com/patagonia-harvest","image":"patagonia-harvest.svg","membership":3},
+  {"name":"Río Negro Logistics","address":"Ruta Nacional 22 km 998, Choele Choel","phone":"+54 2944 555-102","website":"https://example.com/rio-negro-logistics","image":"rio-negro-logistics.svg","membership":3},
+  {"name":"Valle Verde Market","address":"San Martín 420, Choele Choel","phone":"+54 2944 555-103","website":"https://example.com/valle-verde-market","image":"valle-verde-market.svg","membership":2},
+  {"name":"Estudio Sur","address":"Alsina 245, Choele Choel","phone":"+54 2944 555-104","website":"https://example.com/estudio-sur","image":"estudio-sur.svg","membership":2},
+  {"name":"Hostería La Isla","address":"Costanera Norte 75, Choele Choel","phone":"+54 2944 555-105","website":"https://example.com/hosteria-la-isla","image":"hosteria-la-isla.svg","membership":1},
+  {"name":"Taller del Valle","address":"Don Bosco 610, Choele Choel","phone":"+54 2944 555-106","website":"https://example.com/taller-del-valle","image":"taller-del-valle.svg","membership":1},
+  {"name":"Cooperativa Pomona","address":"Belgrano 930, Choele Choel","phone":"+54 2944 555-107","website":"https://example.com/cooperativa-pomona","image":"cooperativa-pomona.svg","membership":1}
+]

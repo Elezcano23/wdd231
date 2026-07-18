@@ -1,0 +1,43 @@
+:root {
+    --forest: #174c4f;
+    --river: #207b83;
+    --sun: #e7aa3b;
+    --cream: #f8f4ec;
+    --ink: #182527;
+    --muted: #59666b;
+}
+
+body { font-family: "Source Sans 3", Arial, sans-serif; color: var(--ink); background: var(--cream); }
+.site-header { display: flex; align-items: center; flex-wrap: wrap; padding: .7rem 1rem; background: #fff; box-shadow: 0 2px 8px rgb(0 0 0 / 10%); }
+.brand { display: flex; align-items: center; gap: .6rem; color: var(--forest); font-family: Montserrat, sans-serif; font-size: .9rem; font-weight: 700; line-height: 1.15; text-decoration: none; }
+.brand img { width: 46px; }
+#menu-button { margin-left: auto; padding: .25rem .5rem; border: 0; color: var(--forest); background: transparent; font-size: 2rem; cursor: pointer; }
+#primary-navigation { display: none; width: 100%; }
+#primary-navigation.open { display: block; }
+#primary-navigation a { display: block; padding: .7rem; border-top: 1px solid #dbe3e1; color: var(--ink); font-weight: 600; text-align: center; text-decoration: none; }
+#primary-navigation a:hover, #primary-navigation a[aria-current="page"] { color: #fff; background: var(--forest); }
+main { max-width: 1200px; margin: 0 auto; padding: 1.75rem 1rem 2.5rem; }
+h1, h2 { font-family: Montserrat, sans-serif; }
+h1 { color: var(--forest); font-size: clamp(1.8rem, 5vw, 2.5rem); }
+.view-controls { display: flex; justify-content: center; gap: .75rem; margin: 1.5rem 0; }
+.view-controls button { min-width: 7rem; padding: .5rem .75rem; border: 1px solid var(--forest); color: var(--forest); font-weight: 700; background: #fff; cursor: pointer; }
+.view-controls button.active, .view-controls button:hover { color: #fff; background: var(--forest); }
+#member-directory.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); gap: 1rem; }
+.member-card { display: grid; grid-template-columns: 92px 1fr; gap: .9rem; align-items: center; padding: 1.1rem; border-top: 5px solid var(--river); border-radius: 5px; background: #fff; box-shadow: 0 3px 10px rgb(0 0 0 / 12%); }
+.member-card img { grid-row: span 2; width: 92px; height: 92px; border-radius: 50%; object-fit: cover; background: #e3eeee; }
+.member-card h2 { align-self: end; color: var(--forest); font-size: 1.15rem; }
+.member-card p { color: var(--muted); line-height: 1.35; }
+.member-card a { color: #125f86; overflow-wrap: anywhere; }
+#member-directory.list { display: grid; gap: .65rem; }
+#member-directory.list .member-card { grid-template-columns: 64px minmax(150px, 1fr); padding: .75rem; border-top: 0; border-left: 5px solid var(--river); }
+#member-directory.list .member-card img { grid-row: span 2; width: 64px; height: 64px; }
+#member-directory.list .member-card p { display: flex; flex-wrap: wrap; gap: .25rem 1rem; }
+.level { color: #78520d; font-weight: 700; }
+footer { display: grid; gap: 1.5rem; padding: 2rem 1rem; color: #fff; background: var(--forest); }
+footer h2 { font-size: 1rem; }
+footer p { line-height: 1.5; }
+footer a { color: #fff; }
+.footer-social { display: flex; justify-content: center; gap: .8rem; }
+.footer-social a { display: grid; width: 2.6rem; height: 2.6rem; place-items: center; border: 2px solid #fff; border-radius: 50%; font-weight: 700; text-decoration: none; }
+.footer-info { font-size: .95rem; }
+@media (max-width: 370px) { .brand { font-size: .78rem; } }
