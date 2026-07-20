@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the businesses and organizations that make up the Choele Choel Chamber of Commerce.">
+    <meta name="author" content="Ezequiel Lezcano">
+    <title>Business Directory | Choele Choel Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <meta property="og:title" content="Business Directory | Choele Choel Chamber of Commerce">
+    <meta property="og:description" content="Discover local businesses and organizations in Choele Choel, Río Negro.">
+    <meta property="og:image" content="https://elezcano23.github.io/wdd231/chamber/images/chamber-share.svg">
+    <meta property="og:url" content="https://elezcano23.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Choele Choel Chamber of Commerce home">
+            <img src="images/chamber-mark.svg" alt="" width="52" height="52">
+            <span>Choele Choel<br>Chamber of Commerce</span>
+        </a>
+        <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+        <nav id="primary-navigation" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html" aria-current="page">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Business Directory</h1>
+        <div class="view-controls" aria-label="Directory view controls">
+            <button id="grid-button" class="active" type="button" aria-pressed="true">Grid view</button>
+            <button id="list-button" type="button" aria-pressed="false">List view</button>
+        </div>
+        <div id="member-directory" class="grid" aria-live="polite"></div>
+    </main>
+
+    <footer>
+        <section class="footer-contact">
+            <h2>Choele Choel Chamber of Commerce</h2>
+            <p>Avellaneda 1200<br>Choele Choel, Río Negro, Argentina<br><a href="mailto:info@choelechoelchamber.org">info@choelechoelchamber.org</a><br><a href="tel:+5429445552300">+54 2944 555-2300</a></p>
+        </section>
+        <section class="footer-social" aria-label="Social media links">
+            <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">◎</a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a>
+        </section>
+        <section class="footer-info">
+            <p>WDD 231 Class Project<br>Ezequiel Lezcano<br>© <span id="current-year"></span> Choele Choel Chamber of Commerce<br>Last Modification: <span id="last-modified"></span></p>
+        </section>
+    </footer>
+</body>
+</html>
