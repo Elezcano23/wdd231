@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Modules - WDD 231</title>
+    <meta name="description" content="WDD 231 JavaScript modules practice page for managing BYU-Idaho course section enrollment.">
+    <meta name="author" content="Ezequiel Lezcano">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/modules.css">
+    <script type="module" src="scripts/modules.mjs"></script>
+</head>
+<body>
+    <main>
+        <h1>JavaScript Modules</h1>
+
+        <section class="course-card">
+            <h2 id="courseName">Course Title</h2>
+            <p id="courseCode"></p>
+
+            <form class="controls">
+                <label for="sectionNumber">Course Section</label>
+                <select id="sectionNumber" name="sectionNumber"></select>
+
+                <div class="button-group">
+                    <button id="enrollStudent" type="button">Enroll Student</button>
+                    <button id="dropStudent" type="button">Drop Student</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="sections-card">
+            <h2>Available Sections</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Section</th>
+                            <th scope="col">Room</th>
+                            <th scope="col">Students</th>
+                            <th scope="col">Days</th>
+                            <th scope="col">Instructor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sections"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
