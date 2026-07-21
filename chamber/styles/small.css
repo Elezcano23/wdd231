@@ -40,4 +40,24 @@ footer a { color: #fff; }
 .footer-social { display: flex; justify-content: center; gap: .8rem; }
 .footer-social a { display: grid; width: 2.6rem; height: 2.6rem; place-items: center; border: 2px solid #fff; border-radius: 50%; font-weight: 700; text-decoration: none; }
 .footer-info { font-size: .95rem; }
+.home-main { padding-top: 1rem; }
+.hero { position: relative; display: grid; min-height: 26rem; overflow: hidden; border-radius: 8px; background: var(--forest); }
+.hero img { width: 100%; height: 100%; min-height: 26rem; object-fit: cover; }
+.hero-content { position: absolute; inset: auto 1rem 1rem; max-width: 38rem; padding: 1rem; border-radius: 8px; color: #fff; background: rgb(24 37 39 / 86%); }
+.hero-content h1 { margin: 0 0 .5rem; color: #fff; font-size: clamp(1.8rem, 8vw, 3.5rem); line-height: 1.05; }
+.hero-content p { margin: 0 0 1rem; font-size: 1.05rem; line-height: 1.4; }
+.cta-button { display: inline-block; padding: .75rem 1rem; border-radius: 5px; color: var(--ink); font-weight: 700; text-decoration: none; background: var(--sun); }
+.cta-button:hover { background: #f2c267; }
+.home-grid, .spotlights { display: grid; gap: 1rem; }
+.events-card, .weather-card, .spotlights-card, .spotlight-card { padding: 1rem; border-radius: 8px; background: #fff; box-shadow: 0 3px 10px rgb(0 0 0 / 12%); }
+.events-card h2, .weather-card h2, .spotlights-card h2 { margin-top: 0; color: var(--forest); }
+.events-card article { padding-block: .6rem; border-top: 1px solid #dbe3e1; }
+.events-card h3, .spotlight-card h3 { margin-bottom: .25rem; color: var(--forest); }
+.weather-card figure { display: flex; align-items: center; gap: .75rem; margin: .5rem 0 1rem; }
+.forecast { display: grid; gap: .5rem; }
+.forecast p { margin: 0; padding: .6rem; border-left: 5px solid var(--river); background: #eef6f7; }
+.spotlight-card { display: grid; gap: .35rem; text-align: center; }
+.spotlight-card img { width: 88px; height: 88px; margin: 0 auto; border-radius: 50%; object-fit: cover; background: #e3eeee; }
+.spotlight-card p { margin: 0; color: var(--muted); }
+.spotlight-card a { color: #125f86; overflow-wrap: anywhere; }
 @media (max-width: 370px) { .brand { font-size: .78rem; } }

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">Choele Choel Chamber of Commerce hero image</title>
+  <desc id="heroDesc">A stylized view of the Rio Negro valley with local businesses and a warm sunrise.</desc>
+  <rect width="1200" height="520" fill="#f8f4ec"/>
+  <path d="M0 318 C160 270 300 346 460 305 C620 263 760 237 920 286 C1040 323 1120 302 1200 276 L1200 520 L0 520 Z" fill="#207b83"/>
+  <path d="M0 360 C150 340 300 405 450 370 C620 330 770 330 940 386 C1050 423 1140 390 1200 366 L1200 520 L0 520 Z" fill="#174c4f"/>
+  <circle cx="1000" cy="120" r="70" fill="#e7aa3b"/>
+  <g fill="#ffffff" stroke="#174c4f" stroke-width="6">
+    <rect x="145" y="215" width="190" height="135" rx="6"/>
+    <rect x="410" y="175" width="220" height="175" rx="6"/>
+    <rect x="705" y="225" width="180" height="125" rx="6"/>
+  </g>
+  <g fill="#e7aa3b">
+    <rect x="175" y="252" width="44" height="44"/>
+    <rect x="250" y="252" width="44" height="44"/>
+    <rect x="450" y="220" width="52" height="52"/>
+    <rect x="535" y="220" width="52" height="52"/>
+    <rect x="743" y="260" width="44" height="44"/>
+    <rect x="815" y="260" width="44" height="44"/>
+  </g>
+  <path d="M130 214 L240 130 L350 214 Z M390 174 L520 80 L650 174 Z M690 224 L795 145 L900 224 Z" fill="#174c4f"/>
+  <path d="M70 420 H1130" stroke="#f8f4ec" stroke-width="16" stroke-linecap="round" opacity=".75"/>
+</svg>

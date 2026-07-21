@@ -46,7 +46,7 @@ menuButton.addEventListener("click", () => {
     const isOpen = navigation.classList.toggle("open");
     menuButton.setAttribute("aria-expanded", isOpen);
     menuButton.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
-    menuButton.textContent = isOpen ? "×" : "☰";
+    menuButton.textContent = isOpen ? "\u00d7" : "\u2630";
 });
 
 document.querySelector("#current-year").textContent = new Date().getFullYear();
