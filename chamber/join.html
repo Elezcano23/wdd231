@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply to join the Choele Choel Chamber of Commerce and compare membership benefits.">
+    <meta name="author" content="Ezequiel Lezcano">
+    <title>Join | Choele Choel Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <meta property="og:title" content="Join | Choele Choel Chamber of Commerce">
+    <meta property="og:description" content="Apply for chamber membership and choose the level that best supports your organization.">
+    <meta property="og:image" content="https://elezcano23.github.io/wdd231/chamber/images/chamber-share.svg">
+    <meta property="og:url" content="https://elezcano23.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Choele Choel Chamber of Commerce home">
+            <img src="images/chamber-mark.svg" alt="" width="52" height="52">
+            <span>Choele Choel<br>Chamber of Commerce</span>
+        </a>
+        <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">&#9776;</button>
+        <nav id="primary-navigation" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" aria-current="page">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Chamber</h1>
+        <div class="join-layout">
+            <section class="application-card">
+                <h2>Membership Application</h2>
+                <form method="get" action="thankyou.html">
+                    <label>First Name
+                        <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+                    </label>
+
+                    <label>Last Name
+                        <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+
+                    <label>Organization Title
+                        <input type="text" name="organizationTitle" title="Enter your organization title using at least seven letters, hyphens, or spaces" autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+                    </label>
+
+                    <label>Email Address
+                        <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="name@example.com" required>
+                    </label>
+
+                    <label>Mobile Phone Number
+                        <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                    </label>
+
+                    <label>Business or Organization Name
+                        <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+                    </label>
+
+                    <label>Membership Level
+                        <select name="membership" title="Select a membership level" required>
+                            <option value="">Choose a membership level</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>Business or Organization Description
+                        <textarea name="description" title="Describe your business or organization" rows="5"></textarea>
+                    </label>
+
+                    <input id="timestamp" type="hidden" name="timestamp">
+                    <button class="submit-button" type="submit">Submit Membership Application</button>
+                </form>
+            </section>
+
+            <section class="membership-card-list">
+                <h2>Membership Levels</h2>
+                <article class="membership-card">
+                    <h3>NP Membership</h3>
+                    <p>For nonprofit organizations. No annual fee.</p>
+                    <a href="#np-modal" data-modal="np-modal">Learn More</a>
+                </article>
+                <article class="membership-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Entry-level support for growing local businesses.</p>
+                    <a href="#bronze-modal" data-modal="bronze-modal">Learn More</a>
+                </article>
+                <article class="membership-card">
+                    <h3>Silver Membership</h3>
+                    <p>Expanded visibility and event benefits.</p>
+                    <a href="#silver-modal" data-modal="silver-modal">Learn More</a>
+                </article>
+                <article class="membership-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium promotion and leadership opportunities.</p>
+                    <a href="#gold-modal" data-modal="gold-modal">Learn More</a>
+                </article>
+            </section>
+        </div>
+
+        <dialog id="np-modal">
+            <button class="close-modal" type="button" aria-label="Close membership details">&times;</button>
+            <h2>NP Membership Benefits</h2>
+            <p>No annual fee for nonprofit organizations.</p>
+            <p>Includes directory listing, community event announcements, and access to chamber networking events.</p>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <button class="close-modal" type="button" aria-label="Close membership details">&times;</button>
+            <h2>Bronze Membership Benefits</h2>
+            <p>Designed for small businesses beginning their chamber involvement.</p>
+            <p>Includes directory listing, member newsletter access, training invitations, and event discounts.</p>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <button class="close-modal" type="button" aria-label="Close membership details">&times;</button>
+            <h2>Silver Membership Benefits</h2>
+            <p>Built for businesses that want stronger community visibility.</p>
+            <p>Includes Bronze benefits plus social media promotion, workshop discounts, and eligibility for home page spotlights.</p>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <button class="close-modal" type="button" aria-label="Close membership details">&times;</button>
+            <h2>Gold Membership Benefits</h2>
+            <p>Best for organizations seeking premium promotion and leadership access.</p>
+            <p>Includes Silver benefits plus priority advertising, featured event placement, sponsorship opportunities, and leadership roundtables.</p>
+        </dialog>
+    </main>
+
+    <footer>
+        <section class="footer-contact">
+            <h2>Choele Choel Chamber of Commerce</h2>
+            <p>Avellaneda 1200<br>Choele Choel, Rio Negro, Argentina<br><a href="mailto:info@choelechoelchamber.org">info@choelechoelchamber.org</a><br><a href="tel:+5429445552300">+54 2944 555-2300</a></p>
+        </section>
+        <section class="footer-social" aria-label="Social media links">
+            <a href="https://www.youtube.com/" aria-label="YouTube">YT</a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">IG</a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a>
+        </section>
+        <div class="footer-info">
+            <p>WDD 231 Class Project<br>Ezequiel Lezcano<br>&copy; <span id="current-year"></span> Choele Choel Chamber of Commerce<br>Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

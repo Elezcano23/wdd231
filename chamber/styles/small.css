@@ -60,4 +60,35 @@ footer a { color: #fff; }
 .spotlight-card img { width: 88px; height: 88px; margin: 0 auto; border-radius: 50%; object-fit: cover; background: #e3eeee; }
 .spotlight-card p { margin: 0; color: var(--muted); }
 .spotlight-card a { color: #125f86; overflow-wrap: anywhere; }
+.join-layout { display: grid; gap: 1.25rem; }
+.application-card, .membership-card-list, .thank-you-card { padding: 1rem; border-radius: 8px; background: #fff; box-shadow: 0 3px 10px rgb(0 0 0 / 12%); }
+.application-card h2, .membership-card-list h2, .thank-you-card h2 { margin-top: 0; color: var(--forest); }
+.application-card form { display: grid; gap: 1rem; }
+.application-card label { display: grid; gap: .35rem; color: var(--forest); font-weight: 700; }
+.application-card input, .application-card select, .application-card textarea { width: 100%; min-height: 44px; padding: .65rem; border: 1px solid #b9c8c9; border-radius: 5px; color: var(--ink); font: inherit; background: #fff; }
+.application-card textarea { min-height: 8rem; resize: vertical; }
+.submit-button, .membership-card a { min-height: 44px; padding: .75rem 1rem; border: 0; border-radius: 5px; color: #fff; font-weight: 700; text-align: center; text-decoration: none; background: var(--forest); cursor: pointer; }
+.membership-card a { display: inline-grid; align-items: center; }
+.submit-button:hover, .membership-card a:hover { background: var(--river); }
+.membership-card-list { display: grid; gap: 1rem; }
+.membership-card { padding: 1rem; border-left: 6px solid var(--sun); border-radius: 8px; background: #fdfaf2; animation: level-reveal .7s ease both; }
+.membership-card:nth-of-type(2) { animation-delay: .12s; }
+.membership-card:nth-of-type(3) { animation-delay: .24s; }
+.membership-card:nth-of-type(4) { animation-delay: .36s; }
+.membership-card h3 { margin: 0 0 .35rem; color: var(--forest); }
+.membership-card p { margin: 0 0 .75rem; color: var(--muted); }
+dialog { width: min(92vw, 34rem); border: 1px solid #b9c8c9; border-radius: 8px; padding: 1.25rem; color: var(--ink); background: #fff; box-shadow: 0 16px 40px rgb(0 0 0 / 30%); }
+dialog::backdrop { background: rgb(0 0 0 / 55%); }
+dialog h2 { margin: 0 2rem 1rem 0; color: var(--forest); }
+dialog p { line-height: 1.5; }
+.close-modal { position: absolute; top: .6rem; right: .6rem; width: 2.25rem; height: 2.25rem; border: 0; border-radius: 50%; color: #fff; background: var(--forest); font-size: 1.3rem; line-height: 1; cursor: pointer; }
+.close-modal:hover { background: var(--river); }
+.thank-you-card { max-width: 760px; }
+#application-summary { display: grid; gap: .35rem .75rem; margin: 1rem 0 0; }
+#application-summary dt { color: var(--forest); font-weight: 700; }
+#application-summary dd { margin: 0 0 .8rem; padding-bottom: .8rem; border-bottom: 1px solid #dbe3e1; color: var(--muted); overflow-wrap: anywhere; }
+@keyframes level-reveal {
+    from { opacity: 0; transform: translateY(1rem); }
+    to { opacity: 1; transform: translateY(0); }
+}
 @media (max-width: 370px) { .brand { font-size: .78rem; } }

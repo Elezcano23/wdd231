@@ -11,4 +11,7 @@
     .home-grid { grid-template-columns: 1.35fr .9fr; align-items: stretch; margin-top: 1rem; }
     .hero-content { inset: auto auto 2rem 2rem; padding: 1.5rem; }
     .spotlights { grid-template-columns: repeat(3, 1fr); }
+    .join-layout { grid-template-columns: minmax(0, 1.35fr) minmax(18rem, .75fr); align-items: start; }
+    #application-summary { grid-template-columns: max-content 1fr; }
+    #application-summary dd { margin-bottom: 0; }
 }
