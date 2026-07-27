@@ -3,18 +3,14 @@
     gap: 1.25rem;
 }
 
-.application-card,
-.membership-card-list,
-.thank-you-card {
+:is(.application-card, .membership-card-list, .thank-you-card) {
     padding: 1rem;
     border-radius: 8px;
     background: #ffffff;
     box-shadow: 0 3px 10px rgb(0 0 0 / 12%);
 }
 
-.application-card h2,
-.membership-card-list h2,
-.thank-you-card h2 {
+:is(.application-card, .membership-card-list, .thank-you-card) h2 {
     margin-top: 0;
     color: var(--forest);
 }
@@ -44,7 +40,7 @@
     background: #ffffff;
 }
 
-.application-card textarea {
+.organization-description {
     min-height: 8rem;
     resize: vertical;
 }
@@ -59,13 +55,11 @@
     font-weight: 700;
     text-align: center;
     text-decoration: none;
-    background: var(--forest);
-    cursor: pointer;
-}
-
-.membership-card a {
     display: inline-grid;
     align-items: center;
+    justify-content: center;
+    background: var(--forest);
+    cursor: pointer;
 }
 
 .submit-button:hover,
