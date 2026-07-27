@@ -68,6 +68,7 @@ const primaryNav = document.querySelector("#primaryNav");
 const courseList = document.querySelector("#courseList");
 const totalCredits = document.querySelector("#totalCredits");
 const filterButtons = document.querySelectorAll(".course-filters button");
+const courseDetails = document.querySelector("#course-details");
 
 currentYear.textContent = new Date().getFullYear();
 lastModified.textContent = `Last Modified: ${document.lastModified}`;
@@ -78,6 +79,9 @@ function displayCourses(courseSelection) {
     courseSelection.forEach((course) => {
         const courseCard = document.createElement("article");
         courseCard.classList.add("course-card");
+        courseCard.setAttribute("tabindex", "0");
+        courseCard.setAttribute("role", "button");
+        courseCard.setAttribute("aria-label", `View details for ${course.subject} ${course.number}`);
         if (course.completed) {
             courseCard.classList.add("completed");
         }
@@ -87,6 +91,14 @@ function displayCourses(courseSelection) {
             <p>${course.title}</p>
             <span>${course.credits} credits${course.completed ? " - Completed" : ""}</span>
         `;
+
+        courseCard.addEventListener("click", () => displayCourseDetails(course));
+        courseCard.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                displayCourseDetails(course);
+            }
+        });
 
         courseList.appendChild(courseCard);
     });
@@ -100,11 +112,42 @@ function setActiveFilter(selectedButton) {
     selectedButton.classList.add("active");
 }
 
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal" type="button" aria-label="Close course details">\u00d7</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
+    `;
+
+    courseDetails.showModal();
+
+    document.querySelector("#closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
 menuButton.addEventListener("click", () => {
     const isOpen = primaryNav.classList.toggle("open");
     menuButton.setAttribute("aria-expanded", isOpen);
     menuButton.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
     menuButton.textContent = isOpen ? "\u00d7" : "\u2630";
+});
+
+courseDetails.addEventListener("click", (event) => {
+    const dialogDimensions = courseDetails.getBoundingClientRect();
+    const clickedOutside =
+        event.clientX < dialogDimensions.left ||
+        event.clientX > dialogDimensions.right ||
+        event.clientY < dialogDimensions.top ||
+        event.clientY > dialogDimensions.bottom;
+
+    if (clickedOutside) {
+        courseDetails.close();
+    }
 });
 
 filterButtons.forEach((button) => {

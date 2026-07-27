@@ -57,11 +57,21 @@
     border-left: 0.45rem solid var(--accent-color);
     border-radius: 4px;
     background-color: var(--secondary-color);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .course-card.completed {
     border-left-color: #477a36;
     background-color: var(--completed-color);
+}
+
+.course-card:hover,
+.course-card:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 16%);
+    transform: translateY(-2px);
 }
 
 .course-card h3,
@@ -88,6 +98,51 @@
     padding: 0.75rem 0 0;
     font-size: 0.9rem;
     text-align: center;
+}
+
+dialog {
+    width: min(92vw, 34rem);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem;
+    color: var(--text-color);
+    background-color: var(--card-color);
+    box-shadow: 0 16px 40px rgb(0 0 0 / 30%);
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 55%);
+}
+
+dialog h2,
+dialog h3 {
+    margin: 0 2rem 0.5rem 0;
+    color: var(--primary-color);
+}
+
+dialog p {
+    margin: 0.75rem 0;
+    line-height: 1.5;
+}
+
+#closeModal {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 0;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+    background-color: var(--accent-color);
 }
 
 @media screen and (min-width: 700px) {
