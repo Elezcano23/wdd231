@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you confirmation page for Choele Choel Chamber of Commerce membership applications.">
+    <meta name="author" content="Ezequiel Lezcano">
+    <title>Thank You | Choele Choel Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <meta property="og:title" content="Thank You | Choele Choel Chamber of Commerce">
+    <meta property="og:description" content="Membership application confirmation for the Choele Choel Chamber of Commerce.">
+    <meta property="og:image" content="https://elezcano23.github.io/wdd231/chamber/images/chamber-share.svg">
+    <meta property="og:url" content="https://elezcano23.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Choele Choel Chamber of Commerce home">
+            <img src="images/chamber-mark.svg" alt="" width="52" height="52">
+            <span>Choele Choel<br>Chamber of Commerce</span>
+        </a>
+        <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">&#9776;</button>
+        <nav id="primary-navigation" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thank-you-card">
+            <h1>Thank You for Applying</h1>
+            <p>Your membership application has been received. A chamber representative will review your information and contact you soon.</p>
+            <h2>Application Summary</h2>
+            <dl id="application-summary"></dl>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-contact">
+            <h2>Choele Choel Chamber of Commerce</h2>
+            <p>Avellaneda 1200<br>Choele Choel, Rio Negro, Argentina<br><a href="mailto:info@choelechoelchamber.org">info@choelechoelchamber.org</a><br><a href="tel:+5429445552300">+54 2944 555-2300</a></p>
+        </section>
+        <section class="footer-social" aria-label="Social media links">
+            <a href="https://www.youtube.com/" aria-label="YouTube">YT</a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">IG</a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a>
+        </section>
+        <div class="footer-info">
+            <p>WDD 231 Class Project<br>Ezequiel Lezcano<br>&copy; <span id="current-year"></span> Choele Choel Chamber of Commerce<br>Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
