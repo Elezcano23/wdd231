@@ -1,0 +1,1 @@
+export const $=s=>document.querySelector(s);export function shell(){const b=$('#menu'),n=$('#nav');b?.addEventListener('click',()=>n.classList.toggle('open'));$('#year').textContent=new Date().getFullYear()}export async function get(url){const r=await fetch(url);if(!r.ok)throw Error(r.status);return r.json()}

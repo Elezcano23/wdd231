@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="TC Tracker 2026 Turismo Carretera driver standings.">
+    <meta name="author" content="Ezequiel Lezcano">
+    <meta property="og:title" content="TC Tracker Drivers">
+    <meta property="og:description" content="2026 Turismo Carretera drivers and standings.">
+    <title>TC Tracker | Drivers</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/drivers.js"></script>
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="index.html"><img src="images/tctracker_logo.png"
+                alt="TC Tracker logo"><span>TC TRACKER</span></a><button id="menu" aria-label="Open menu">☰</button>
+        <nav id="nav"><a href="index.html">Home</a><a aria-current="page" href="drivers.html">Drivers</a><a
+                href="circuits.html">Circuits</a></nav>
+    </header>
+    <main>
+        <p>2026 SEASON</p>
+        <h1>Driver standings</h1>
+        <p>Explore leading Turismo Carretera drivers. Select a card for more detail.</p>
+        <div id="drivers" class="grid"></div>
+        <dialog id="driver-modal" class="modal"><button id="close-modal" aria-label="Close">×</button>
+            <div id="modal-content"></div>
+        </dialog>
+    </main>
+    <footer>
+        <p>© <span id="year"></span> TC Tracker · <a href="attributions.html">Attributions</a></p>
+    </footer>
+</body>
+
+</html>
