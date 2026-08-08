@@ -411,4 +411,4 @@ footer {
     .site-footer>p {
         grid-column: 1/-1
     }
-}
+}.site-footer{padding:1.25rem 8%!important;color:#fff!important;background:#101827!important}.footer-logo img{width:92px!important;max-height:54px;object-fit:contain}.footer-links{gap:2rem}.footer-links h2{font-size:.72rem}.footer-links a,.site-footer>p{color:#d9e1ea!important;font-size:.78rem}.site-footer>p{margin-top:.85rem;padding-top:.75rem;border-top-color:#ffffff33!important}
