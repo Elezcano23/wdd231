@@ -40,6 +40,20 @@ footer a { color: #fff; }
 .footer-social { display: flex; justify-content: center; gap: .8rem; }
 .footer-social a { display: grid; width: 2.6rem; height: 2.6rem; place-items: center; border: 2px solid #fff; border-radius: 50%; font-weight: 700; text-decoration: none; }
 .footer-info { font-size: .95rem; }
+.discover-main { max-width: 1200px; }
+.discover-intro { max-width: 48rem; }
+.section-label { margin-bottom: .35rem; color: var(--river); font-size: .85rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.discover-intro > p:last-child { margin: .5rem 0 0; font-size: 1.08rem; line-height: 1.5; }
+.visit-message { margin: 1.25rem 0; padding: .85rem 1rem; border-left: 5px solid var(--sun); color: var(--ink); font-weight: 700; background: #fff7e6; }
+.discover-cards { display: grid; gap: 1rem; }
+.discover-card { display: grid; grid-template-areas: "title" "image" "address" "description" "button"; gap: .75rem; padding: 1rem; border-radius: 8px; background: #fff; box-shadow: 0 3px 10px rgb(0 0 0 / 12%); }
+.discover-card h2 { grid-area: title; margin: 0; color: var(--forest); font-size: 1.25rem; }
+.discover-card figure { grid-area: image; margin: 0; overflow: hidden; border-radius: 5px; background: #e3eeee; }
+.discover-card img { width: 100%; height: 200px; object-fit: cover; }
+.discover-card address { grid-area: address; color: var(--muted); font-style: normal; font-weight: 700; line-height: 1.35; }
+.discover-card p { grid-area: description; margin: 0; line-height: 1.45; }
+.discover-card button { grid-area: button; width: fit-content; padding: .55rem .9rem; border: 1px solid var(--forest); border-radius: 4px; color: #fff; font-weight: 700; background: var(--forest); cursor: pointer; }
+.discover-card button:hover, .discover-card button:focus-visible { background: var(--river); }
 .home-main { padding-top: 1rem; }
 .hero { position: relative; display: grid; min-height: 26rem; overflow: hidden; border-radius: 8px; background: var(--forest); }
 .hero img { width: 100%; height: 100%; min-height: 26rem; object-fit: cover; }
