@@ -1,1 +1,202 @@
-[{"name":"Jonatan Castellano","number":101,"team":"Galarza Racing","brand":"Dodge","brandLogo":"dodge.webp","position":1,"points":266.5,"image":"jonatan_castellano.png"},{"name":"Agustín Canapino","number":1,"team":"Canning Motorsport","brand":"Chevrolet","brandLogo":"chevrolet.webp","position":2,"points":229.5,"image":"agustin_canapino.png"},{"name":"Otto Fritzler","number":256,"team":"Prestige Auto Racing Team","brand":"Mercedes-Benz","brandLogo":"mercedes.webp","position":3,"points":226.5,"image":"otto_fritzler.png"},{"name":"José Manuel Urcera","number":231,"team":"Maquin Parts Racing","brand":"Mercedes-Benz","brandLogo":"mercedes.webp","position":4,"points":218,"image":"jose_manuel_urcera.png"},{"name":"Marcos Landa","number":95,"team":"Pradecon Racing","brand":"Chevrolet","brandLogo":"chevrolet.webp","position":5,"points":214.5,"image":"marcos_landa.png"},{"name":"Hernán Palazzo","number":119,"team":"Pradecon Racing","brand":"Toyota","brandLogo":"toyota.webp","position":6,"points":212,"image":"hernan_palazzo.png"},{"name":"Mariano Werner","number":11,"team":"Fadel Werner Competición","brand":"Ford","brandLogo":"ford.webp","position":7,"points":208.5,"image":"mariano_werner.png"},{"name":"Ignacio Faín","number":86,"team":"Trotta Competición","brand":"Torino","brandLogo":"torino.webp","position":8,"points":208.5,"image":"ignacio_fain.png"},{"name":"Matías Rossi","number":117,"team":"Pradecon Racing","brand":"Toyota","brandLogo":"toyota.webp","position":9,"points":208,"image":"matias_rossi.png"},{"name":"Mauricio Lambiris","number":3,"team":"Martínez Competición","brand":"Ford","brandLogo":"ford.webp","position":10,"points":205.5,"image":"mauricio_lambiris.png"},{"name":"Christian Ledesma","number":14,"team":"Pradecon Racing","brand":"Chevrolet","brandLogo":"chevrolet.webp","position":11,"points":205,"image":"christian_ledesma.png"},{"name":"Facundo Chapur","number":79,"team":"Trotta Competición","brand":"Torino","brandLogo":"torino.webp","position":12,"points":184.5,"image":"facundo_chapur.png"},{"name":"Elio Craparo","number":29,"team":"Moriatis Competición","brand":"Ford","brandLogo":"ford.webp","position":13,"points":170.5,"image":"elio_craparo.png"},{"name":"Valentín Aguirre","number":133,"team":"Pradecon Racing","brand":"Chevrolet","brandLogo":"chevrolet.webp","position":14,"points":169.5,"image":"valentin_aguirre.png"},{"name":"Juan Tomás Catalán Magni","number":53,"team":"Azar Motor Sport","brand":"Toyota","brandLogo":"toyota.webp","position":15,"points":167.5,"image":"juan_catalan_magni.png"},{"name":"Tobías Martínez","number":107,"team":"RUS MED Team","brand":"Chevrolet","brandLogo":"chevrolet.webp","position":16,"points":167,"image":"tobias_martinez.png"},{"name":"Julián Santero","number":68,"team":"BMW Motor Sport","brand":"BMW","brandLogo":"bmw.webp","position":17,"points":165.5,"image":"julian_santero.png"},{"name":"Luis José Di Palma","number":24,"team":"RUS MED Team","brand":"Toyota","brandLogo":"toyota.webp","position":18,"points":164.5,"image":"josito_di_palma.png"},{"name":"Emiliano Spataro","number":27,"team":"Spataro Racing","brand":"Ford","brandLogo":"ford.webp","position":19,"points":164,"image":"emiliano_spataro.png"},{"name":"Germán Todino","number":4,"team":"Laboritto Jrs.","brand":"Ford","brandLogo":"ford.webp","position":20,"points":156,"image":"german_todino.png"}]
+[
+    {
+        "name":  "Jonatan Castellano",
+        "number":  101,
+        "team":  "Galarza Racing",
+        "brand":  "Dodge",
+        "brandLogo":  "dodge.webp",
+        "position":  1,
+        "points":  266.5,
+        "image":  "jonatan_castellano.png"
+    },
+    {
+        "name":  "Agustín Canapino",
+        "number":  1,
+        "team":  "Canning Motorsport",
+        "brand":  "Chevrolet",
+        "brandLogo":  "chevrolet.webp",
+        "position":  2,
+        "points":  229.5,
+        "image":  "agustin_canapino.png"
+    },
+    {
+        "name":  "Otto Fritzler",
+        "number":  256,
+        "team":  "Prestige Auto Racing Team",
+        "brand":  "Mercedes-Benz",
+        "brandLogo":  "mercedes.webp",
+        "position":  3,
+        "points":  226.5,
+        "image":  "otto_fritzler.png"
+    },
+    {
+        "name":  "José Manuel Urcera",
+        "number":  231,
+        "team":  "Maquin Parts Racing",
+        "brand":  "Mercedes-Benz",
+        "brandLogo":  "mercedes.webp",
+        "position":  4,
+        "points":  218,
+        "image":  "jose_manuel_urcera.png"
+    },
+    {
+        "name":  "Marcos Landa",
+        "number":  95,
+        "team":  "Pradecon Racing",
+        "brand":  "Chevrolet",
+        "brandLogo":  "chevrolet.webp",
+        "position":  5,
+        "points":  214.5,
+        "image":  "marcos_landa.png"
+    },
+    {
+        "name":  "Hernán Palazzo",
+        "number":  119,
+        "team":  "Pradecon Racing",
+        "brand":  "Toyota",
+        "brandLogo":  "toyota.webp",
+        "position":  6,
+        "points":  212,
+        "image":  "hernan_palazzo.png"
+    },
+    {
+        "name":  "Mariano Werner",
+        "number":  11,
+        "team":  "Fadel Werner Competición",
+        "brand":  "Ford",
+        "brandLogo":  "ford.webp",
+        "position":  7,
+        "points":  208.5,
+        "image":  "mariano_werner.png"
+    },
+    {
+        "name":  "Ignacio Faín",
+        "number":  86,
+        "team":  "Trotta Competición",
+        "brand":  "Torino",
+        "brandLogo":  "torino.webp",
+        "position":  8,
+        "points":  208.5,
+        "image":  "ignacio_fain.png"
+    },
+    {
+        "name":  "Matías Rossi",
+        "number":  117,
+        "team":  "Pradecon Racing",
+        "brand":  "Toyota",
+        "brandLogo":  "toyota.webp",
+        "position":  9,
+        "points":  208,
+        "image":  "matias_rossi.png"
+    },
+    {
+        "name":  "Mauricio Lambiris",
+        "number":  3,
+        "team":  "Martínez Competición",
+        "brand":  "Ford",
+        "brandLogo":  "ford.webp",
+        "position":  10,
+        "points":  205.5,
+        "image":  "mauricio_lambiris.png"
+    },
+    {
+        "name":  "Christian Ledesma",
+        "number":  14,
+        "team":  "Pradecon Racing",
+        "brand":  "Chevrolet",
+        "brandLogo":  "chevrolet.webp",
+        "position":  11,
+        "points":  205,
+        "image":  "christian_ledesma.png"
+    },
+    {
+        "name":  "Facundo Chapur",
+        "number":  79,
+        "team":  "Trotta Competición",
+        "brand":  "Torino",
+        "brandLogo":  "torino.webp",
+        "position":  12,
+        "points":  184.5,
+        "image":  "facundo_chapur.png"
+    },
+    {
+        "name":  "Elio Craparo",
+        "number":  29,
+        "team":  "Moriatis Competición",
+        "brand":  "Ford",
+        "brandLogo":  "ford.webp",
+        "position":  13,
+        "points":  170.5,
+        "image":  "elio_craparo.png"
+    },
+    {
+        "name":  "Valentín Aguirre",
+        "number":  133,
+        "team":  "Pradecon Racing",
+        "brand":  "Chevrolet",
+        "brandLogo":  "chevrolet.webp",
+        "position":  14,
+        "points":  169.5,
+        "image":  "valentin_aguirre.png"
+    },
+    {
+        "name":  "Juan Tomás Catalán Magni",
+        "number":  53,
+        "team":  "Azar Motor Sport",
+        "brand":  "Toyota",
+        "brandLogo":  "toyota.webp",
+        "position":  15,
+        "points":  167.5,
+        "image":  "juan_catalan_magni.png"
+    },
+    {
+        "name":  "Tobías Martínez",
+        "number":  107,
+        "team":  "RUS MED Team",
+        "brand":  "Chevrolet",
+        "brandLogo":  "chevrolet.webp",
+        "position":  16,
+        "points":  167,
+        "image":  "tobias_martinez.png"
+    },
+    {
+        "name":  "Julián Santero",
+        "number":  68,
+        "team":  "BMW Motor Sport",
+        "brand":  "BMW",
+        "brandLogo":  "bmw.webp",
+        "position":  17,
+        "points":  165.5,
+        "image":  "julian_santero.png"
+    },
+    {
+        "name":  "Luis José Di Palma",
+        "number":  24,
+        "team":  "RUS MED Team",
+        "brand":  "Toyota",
+        "brandLogo":  "toyota.webp",
+        "position":  18,
+        "points":  164.5,
+        "image":  "josito_di_palma.png"
+    },
+    {
+        "name":  "Emiliano Spataro",
+        "number":  27,
+        "team":  "Spataro Racing",
+        "brand":  "Ford",
+        "brandLogo":  "ford.webp",
+        "position":  19,
+        "points":  164,
+        "image":  "emiliano_spataro.png"
+    },
+    {
+        "name":  "Germán Todino",
+        "number":  4,
+        "team":  "Laboritto Jrs.",
+        "brand":  "Ford",
+        "brandLogo":  "ford.webp",
+        "position":  20,
+        "points":  156,
+        "image":  "german_todino.png"
+    }
+]
